@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Car Rental</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background-image: url(carpic.png);
+            background-size: cover;
+        }
+        
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 25px;
+            text-align: left;
+            color: aliceblue;
+            margin: 5px;
+        }
+        
+        .footer {
+            font-weight: 300;
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        button {
+            background-color: rgb(95, 102, 95);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+        }
+        
+        .landing {
+            padding: 150px 300px 150px 300px;
+            text-align: center;
+        }
+        
+        .landing_p&d {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Cars For You</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample06" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Main page.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">Log in</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown06">
+                        <a class="dropdown-item" href="login.html">My account</a>
+                        <a class="dropdown-item" href="signup.html">Settings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
+        </div>
+    </nav>
+
+    <div class="landing">
+        <div class="landing_p&d">
+            <p class="text_btn"> Pick up Location </p>
+
+
+            <select class="form-control" id="sel1">
+            <option>Chennai</option>
+            <option>Hyderabad</option>
+            <option>Delhi</option>
+            <option>Bangalore</option>
+          </select>
+
+
+            <p class="text_btn"> Drop Location </p>
+
+
+            <select class="form-control" id="sel1">
+            <option>Chennai</option>
+            <option>Hyderabad</option>
+            <option>Delhi</option>
+            <option>Bangalore</option>
+          </select>
+        </div>
+
+
+        <p class="text_btn">Start Date </p>
+
+        <input class="form-control" type="date" name="date">
+
+
+        <p class="text_btn">End Date</p>
+
+        <input class="form-control" type="date" name="date">
+        </br>
+        <button type="button" class="btn btn-primary btn-lg">Book Now</button>&nbsp; &nbsp;
+
+        <button type="button" class="btn btn-warning btn-lg">Clear</button>
+        </form>
+    </div>
+
+
+
+
+    <footer>
+        <p class="footer"> Contact Us | © Copyright 1999-2020 Cars For You Pvt. Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+
+</html>
