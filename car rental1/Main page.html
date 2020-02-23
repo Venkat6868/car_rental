@@ -53,9 +53,24 @@
             display: inline;
         }
     </style>
+	<script>
+		function login()
+			{	
+				
+                if(getParam("pass")=="Venkat@123")
+                {
+				var username = getParam("uname");
+				document.getElementById("loginuser").innerHTML = "Hi "+username;
+                }
+			}
+			function getParam(param){
+			  return new URLSearchParams(window.location.search).get(param);
+			}
+		
+	</script>
 </head>
 
-<body>
+<body onload="javascript:login()">
 
 
 
@@ -87,10 +102,12 @@
                         <a class="dropdown-item" href="#">Logout</a>
                     </div>
                 </li>
+		
             </ul>
-            <form class="form-inline my-2 my-md-0">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
+		<span style="text-align:right;color:WHITE;" id="loginuser">
+		
+		</span>
+           
         </div>
     </nav>
 

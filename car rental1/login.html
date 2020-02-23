@@ -7,7 +7,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <style>
+ 	  
+
+ <style>
         body,
         h1,
         h2,
@@ -113,6 +115,29 @@
         
        
     </style>
+
+<script>
+
+function Newvalidation()
+{
+	var username=document.getElementById("username").value;
+	var password=document.getElementById("password").value;
+	
+
+	if(username=="Venkat" && password=="Venkat@123")
+	{
+		document.getElementById("formid").action="Main page.html\?username=username&password=password";
+		document.getElementById("formid").submit();
+		return true;
+	}
+	else
+	{
+		alert("Please enter correct username and password");
+		return false;
+	}
+
+}
+</script>
 </head>
 
 <body>
@@ -152,14 +177,14 @@
             <h1>
                 <p style="text-align:center" >Login here</p>
             </h1>
-            <form action="#">
+            <form  id="formid">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required><br>
+                <input type="text" placeholder="Enter Username" name="uname" required id="username"><br>
 
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="pass" required><br>
+                <input type="password" placeholder="Enter Password" name="pass" required id="password"><br>
 
-                <button type="submit">Login</button><br>
+                <button type="submit" onclick="javascript:Newvalidation()">Login</button><br>
                 <input type="checkbox" checked="checked">Remember me
         </div>
 
